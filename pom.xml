@@ -4,7 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://apache.org">
     <modelVersion>4.0.0</modelVersion>
 
-
     <groupId>com.matharsa</groupId>
     <artifactId>sap-cloud-integration</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -14,6 +13,21 @@
         <maven.compiler.target>24</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <!-- Jackson Core Databind dependency -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.18.2</version>
+        </dependency>
+        <!-- Jackson Dataformat XML module: Explicitly processes structural XML transformations -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.18.2</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
